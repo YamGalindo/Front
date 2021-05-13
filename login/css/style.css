@@ -120,11 +120,15 @@ p.click-aqui {
 
 /* FOOTER */
 footer {
-  display: block;
-  background-color: #00669f;
   color: white;
   font-weight: 700;
   text-align: center;
-  width: 100%;
   margin-top: 0px;
+  background-color: #00669F;
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
 }
