@@ -7,6 +7,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* ASIDE */
@@ -62,13 +65,11 @@ input {
 }
 
 input:hover {
-  border: 3px solid teal;
+  box-shadow: 0 0 0 3px teal;
 }
 
 input:focus {
   color:rgb(94, 7, 7);
-  font-weight: bold;
-
 }
 
 ::placeholder {
@@ -90,7 +91,7 @@ input:focus {
 .boton:hover {
   background-color: rgb(136, 75, 128);
   color: white;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .entrar {
@@ -104,7 +105,7 @@ a {
 }
 
 a:hover {
-  font-size: 25px;
+  color: #1CD1B0;
 }
 a:visited {
   color: #22770d;
@@ -117,16 +118,13 @@ p.click-aqui {
 
 }
 
-
 /* FOOTER */
 footer {
-  background-color: #00669F;
-}
-
-footer p {
+  display: block;
+  background-color: #00669f;
   color: white;
-  font-size: 15px;
   font-weight: 700;
   text-align: center;
-  padding: 20px;
+  width: 100%;
+  margin-top: 0px;
 }
