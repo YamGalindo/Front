@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/solid.css"
+        integrity="sha384-LA8Ug4T/nhVkyhrSmSirsoAo9iDrBk8E7U80aSPeD+w3vO8PzOJIS6agGcbIwwX0" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/fontawesome.css"
+        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <header>
+            <aside class="descuento">20 % de descuento en todos los productos!! </aside>
+            <h1> <img class="logo" src="./img/Logo.png" alt="logotienda">
+                Nombre Tienda
+            </h1>
+            <nav>
+                <ul>
+                    <li> Contacto</li>
+                    <li> Registrarme</li>
+                    <li> Ingresar </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2>Añadí tu Super!</h2>
+            <p> Agregá tu personaje favorito completando las opciones</p>
+            <form action="">
+                <div class="columna columnaIzquierda">
+                    <label for="nombre">* Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha">
+                    <textarea name="descripcion" rows="10" cols="40" placeholder="Descripcion"></textarea>
+                </div>
+                <div class="columna columnaDerecha">
+                    <label for="especie">*Especie</label>
+                    <select id="especie" name="especie" required>
+                        <option disabled selected>Especie</option>
+                        <option value="Volador"> <label>Volador </label>
+                        </option>
+                        <option value="Acuatico"> Acuático </option>
+                        <option value="Reptil"> Reptil </option>
+                    </select>
+                    <label for="Foto">Agregar foto</label>
+                    <input type="file" id="Foto" name="Foto" accept="image/jpeg, image/png">
+                    <div><h3>Poderes</h3>
+                        <div><input type="checkbox" id="volar" name="Volar">
+                        <label for="volar">Volar</label></div>
+                        <div><input type="checkbox" id="Superinteligencia" name="Superinteligencia">
+                        <label for="Superinteligencia">Superinteligencia</label></div>
+                        <div><input type="checkbox" id="Vista de rayo láser" name="VistaLaser">
+                        <label for="Vista de rayo láser">Vista de rayo láser</label></div>
+                        <div><input type="checkbox" id="Billetera gorda" name="Billetera">
+                        <label for="Billetera gorda">Billetera gorda</label></div>
+                    </div>
+                <hr>
+                    <div><h3>Tipo de personaje</h3>
+                        <div><input type="radio" id=" Héroe / Heroína" name="Tipo de Personaje">
+                        <label for=" Héroe / Heroína"> Héroe / Heroína</label></div>
+                        <div><input type="radio" id="heroe" name="Tipo de Personaje"> 
+                        <label for="Villano / Villana ">Villano / Villana </label></div>
+                    </div>
+                </div>
+                <div class="boton">
+                    <button type="submit"> Añadir </button>
+                </div>
+            </form>
+        </section>
+    </main>
+<footer>
+        <div class="footer-text">Todos los derechos reservados a FRONT END 1</div>
+</footer>
+</body>
+
+</html>
