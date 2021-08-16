@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="descuento">20% de descuento en todos los productos!</div>
+        <div class="tienda"><img src="img/logoTienda.png" alt="Logo Tienda"></div>
+        <h1>Súper Tienda</h1>
+    </header>
+    <main class="formulario form-registro">
+        <h1 class="login">Registro</h1>
+        <form action="./index.html">
+            <input class="contenido-form" type="text" name="nombre-apellido" placeholder="Nombre y apellido">
+            <input class="contenido-form" type="email" name="email" placeholder="Correo Electrónico">
+            <input class="contenido-form" type="password" name="contrasenia" placeholder="Contraseña">
+            <select class="contenido-form" name="pais">
+                <option selected disable hidden>Pais</option>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="colombia">Colombia</option>
+            </select>
+            <input class="boton compartido reset" type="reset" name="reset" value="Resetear">
+            <input class="boton compartido ir-registro" type="submit" name="submit" value="Entrar">
+            <a href="../login/index.html">¿Ya tenés una cuenta?<span class="link-negro">Ingresá</span></a>
+        </form>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-oscuro: #222222;
+    --color-header: #F0A83E;
+    --color-claro: #FFFFFF;
+    --acento: #3C2313;
+}
+body{
+    font-family: 'Roboto', sans-serif ;
+}
+
+/************* ASIDE ***************/
+aside{
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    font-size: 0.6rem;
+    height: 4vh;
+}
+aside select, aside select option{
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    outline: none;
+    border: none;
+    font-size: 0.6rem;
+}
+/***************** HEADER ******************/
+header{
+    background-color: var(--color-header);
+    padding: 5px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+}
+
+/* logo */
+header .header__logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+header .header__logo h1 span{
+    color: var(--color-claro);
+}
+header .header__logo h1 span:nth-child(1){
+    color: var(--acento);
+}
+header .header__logo img{
+    width: 19px;
+    height: 15px;
+}
+
+/* Navegación */
+header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+header nav ul a{
+    color: var(--color-claro);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 5px;
+}
+header i{
+    color: var(--color-claro);
+    margin: 0 12px;
+}
+
+/******************* CONTENIDO PRINCIPAL *******************/
+main{
+    background-image: url('../img/bowl-and-pet-daities-on-green-background\ 1.png');
+    background-size: cover;
+    height: calc(100vh - 16vh - 4vh);
+}
+main section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 12px;
+    padding-right: 31px;
+}
+main section h2{
+    color: var(--color-oscuro);
+    font-size: 1.8rem;
+    font-weight: 400;
+    background-color: var(--color-claro);
+    padding: 10px;
+    border-radius: 5px;
+}
+main section p{
+    color: var(--color-claro);
+    font-size: 1rem;
+    font-weight: 400;
+}
+main section a{
+    color: var(--color-claro);
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: var(--color-header);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 23px;
+    border-radius: 5px;
+}
+/**************** PIE DE PAGINA *******************/
+footer{
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: 700;
+    height: 4vh;
+    padding-top: 5px;
+}
+/****************** VISTA MOBILE *****************/
+@media screen and (max-width: 600px){
+    header nav ul, .header__iconos{
+        display: none;
+    }
+    header nav::before{
+        content: '\f150';
+        font-size: 2rem;
+        font-family: 'Font Awesome 5 free';
+        color: var(--color-claro);
+    }
+    main{
+        background-size: cover;
+        background-position: right;
+    }
+    main section{
+        align-items: center;
+        padding: 0;
+    }
+}

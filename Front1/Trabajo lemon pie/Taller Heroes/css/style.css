@@ -1,0 +1,131 @@
+:root {
+    --picture: 150px;
+    --halfpicture: 75px;
+    --halfpictureinverse: -75px;
+}
+
+.header_b{
+    background-color: #1cd1b0;
+    display: block;
+}
+
+.header_h1{
+    background-color: #00669f;
+    margin: 0;
+    color: white;
+}
+
+.heroCard {
+    background-color: #f3f3f3;
+    width: 30%;
+    margin: 2% auto;
+    border-radius: 30px 30px 0 0;
+}
+
+.heroCard-bg {
+    position: relative;
+    background-color: #f3f3f3;
+    height: 50%;
+    border-radius: 30px 30px 0 0;
+}
+
+.heroCard-fg {
+    position: relative;
+    background-color: lightsalmon;
+    height: var(--picture);
+    width: var(--picture);
+    margin: var(--halfpictureinverse) auto var(--halfpictureinverse) auto;
+    border-radius: 50%;
+}
+
+.heroCard-info {
+    position: relative;
+    border-radius: 0 0 15px 15px;
+    margin: var(--halfpicture) 0 0;
+}
+
+.heroCard-info_h2 {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.heroCard-info_p {
+    margin: auto 0;
+    text-align: left;
+    margin: 5% 10% 10% 5% ;
+    background-color: #f3f3f3;
+}
+
+.heroCard-info_button{
+    display: block;
+    position: relative;
+    margin: 0px auto 15px;
+    background-color: #00669f;
+    padding: 0px auto 15px;
+    bottom: 25px;
+    width: 30%;
+    height: 5%;
+
+}
+
+.footer{
+    background-color: #00669f;
+    color: white;
+    text-align: center;
+}
+
+.footer-span{
+    display: inline-block;
+    width: 80%;
+    position: relative;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.footer-GitHub{
+    display: inline-block;
+    width: 6%;
+    position: relative;
+    text-align: right;
+    padding-left: 50px;
+}
+
+.bgBatman{
+    background-image: url(../img/bg-batman.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 30%;
+
+}
+.fgBatman{
+    background-image: url(../img/batman.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.bgWonderW{
+    background-image: url(../img/bg-wonderw.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 30%;
+
+}
+.fgWonderW{
+    background-image: url(../img/wonderw.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.bgSuperman{
+    background-image: url(../img/bg-superman.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 30%;
+
+}
+.fgSuperMan{
+    background-image: url(../img/superman.jpg);
+    background-position: center center;
+    background-size: cover;
+}

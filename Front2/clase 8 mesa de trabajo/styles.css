@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 2em 10%;
+  }
+  
+  
+  .nacional img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .internacional img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .nacional h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: .2em;
+    
+  }
+  
+  .internacional h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: .2em;
+  
+  }
+
+  .internacional h2:hover {
+    text-decoration: underline;
+  }
+  .nacional h2:hover {
+    text-decoration: underline;
+  }
+
+  footer{
+    background-color: #C31815;
+    grid-area: footer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+    footer p{
+    color: rgb(201, 201, 201);
+    font-size: 12px;
+}
+
+header {
+    margin: 0px;
+    background-color: #C31815;
+    font-weight: bold;
+    height: 60px;
+    grid-area: footer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    position: absolute;
+    top: 5;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.nacional{
+ 
+    width: 30em;
+    background-color: lightgray;
+    box-sizing: border-box;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    text-align: justify;
+}
+
+.internacional {
+    width: 30em;
+    background-color: blue;
+    box-sizing: border-box;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    text-align: justify;
+
+}
+
+.fechaNoticia{
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.textoFooter{
+  color: black;
+  font-weight: bold;
+  
+}

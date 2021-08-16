@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Karla:wght@400;700&family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto, sans-serif;
+}
+
+:root{
+    --main-color: #00669F;
+    --secondary-color: #1CD1B0;
+}
+
+/*BODY*/
+
+/*HEADER*/
+
+.descuento{
+    background-color: var(--secondary-color);
+    position: relative;
+    width: 100%;
+    height: 23px;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+.tienda{
+    background-color: var(--main-color);
+    width: 100%;
+    height: 80px;
+    padding-left: 20px;
+    padding-top: 2px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header {
+    background-color: #00669F;
+    position: relative;
+  }
+
+header h1 {
+    color: white;
+    font-size: 500;
+    font-weight: 700;
+    margin-left: 120px;
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+.tienda p{
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    bottom: 25px;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+/*BARRA NAVEGACION SUPERHEROES*/
+
+nav{
+    background-color: #001D2D;
+    height: 40px;
+    width: 100%;
+    text-align: right;
+    padding-top: 11px;
+    padding-right: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navegacion a{
+    display: inline-block; 
+    margin-right: 10px;
+    color: white;  
+    font-family: Reboto, sans-serif;
+    font-size: 16px;
+}
+
+/*HEADER*/
+
+/*MAIN*/
+
+/*FORMULARIO*/
+
+.formulario{
+    position: relative;
+    margin: auto;
+    width: 620px;
+    height: 428px;   
+    margin-top: 100px;
+}
+
+.form-login{
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.form-registro{
+    margin-bottom: 400px;
+}
+
+.login{
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.contenido-form{
+    width: 620px;
+    height: 60px;
+    margin-top: 20px;
+    padding-left: 23px;
+    border: 2px solid #000000;
+    font-family: Karla, sans-serif;
+    font-size: 20px;
+}
+
+.contenido-form::placeholder{ 
+    color: black; 
+}
+
+.comentar{
+    height: 251px;
+    padding-top: 20px;
+}
+/*FORMULARIO AGREGAR SUPER HEROE*/
+.caja-aniadir-heroe{
+    width: 954px;
+    height: 832px;
+    background: var(--main-color);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 49px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+    font-family: Inter, sans-serif;
+    text-align: left;
+    padding: 18px 110px;
+    font-size: 20px;
+}
+
+.titulo-aniadir-heroe{
+    text-align: center;
+    line-height: 40px;
+}
+
+.caja-columna{
+    display: inline-block;
+    width: 40%;
+}
+
+.izquierda{
+    margin-right: 5%;
+}
+
+.derecha{
+    margin-left: 5%;
+   
+}
+
+.subtitulos-aniadir-heroe{
+    display: block;
+    padding: 20px 0px;
+}
+
+.form-aniadir-heroe{
+    width: 343px;
+    height: 63px;
+    background: #FFFFFF;
+    border: 1.50px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px;
+    font-size: 20px;
+}
+
+.descripcion-heroe{
+    height: 307px;
+    margin-top: 20px;
+}
+
+/*.agregar-foto{
+    width: 223px;
+    height: 32px;
+    background: #CECECE;
+    border-radius: 5px;
+}*/
+.poderes{
+    margin-top: 40px;
+}
+
+.checkbox-radio{
+    font-family: Karla;
+    font-size: 16px;
+}
+.form-check-radio{
+    width: 20px; 
+    height: 18px;
+}
+
+hr{
+    margin-top: 32px;
+    margin-bottom: 20px;
+    width: 343px;
+}
+
+
+/*FIN FORMULARIO AGREGAR SUPER HEROE*/
+
+/*BOTONES*/
+
+.boton{
+    height: 54px;
+    border-radius: 23px;
+    border:none;
+    margin-top: 59px;
+    margin-bottom: 21px;
+    font-family: Karla, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: var(--secondary-color);
+}
+.entrar{ 
+    width: 100%;
+}
+.compartido{
+    width: 300px;
+}
+
+.reset{
+    background-color: #888888;
+    color: white;
+}
+
+.ir-registro{
+    margin-left: 16px;
+}
+
+.aniadir-heroe{
+    display: block;
+    margin: auto;
+    width: 466px;
+    height: 87px;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 45px;
+}
+/*CIERRE BOTONES*/
+
+/*LINKS*/
+
+a{
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    text-decoration: none;
+    color: var(--main-color);
+    display: block;
+    text-align: center;
+}
+
+.link-negro{
+    color:black;
+    margin-left: 3px; 
+}
+
+/*MAIN*/
+
+/*SECTION*/
+.caja-tarjetas{
+    position: relative;
+    height: 533px;
+    width: 1020px;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.tarjeta{
+    display: inline-block;
+    width: 300px;
+    height: 530px;
+    margin: 0px 18px;
+}
+
+.imgPortada{
+    width: 100%;
+    height: 193px;
+    border-radius: 16px 16px 0px 0px;
+    background-size: cover;
+}
+
+.portada-batman{
+    background-image: url(../img/imagenportadabatman.png);
+}
+
+.portada-harley{
+    background-image: url(../img/portadaharley.png);
+}
+
+.fas{
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    padding-left: 21px;
+    padding-top: 17px;    
+}
+
+.imgPerfil{
+    border-radius: 50%;
+    width: 120px;
+    height: 118px;
+    margin: auto;
+    margin-top: -20%;
+    position: relative;
+    z-index: 2;
+}
+
+.perfil-batman{
+    background-image: url(../img/perfilbatman.png);
+}
+
+.perfil-harley{
+    background-image: url(../img/perfilharleyquinn.png);
+}
+
+.caja-cuerpo{
+    width: 300px;
+    height: 336px;
+    margin-top: -20%;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    padding: 73px 16px 18px;
+}
+
+.tituloSuper{
+    text-align: center;
+    font-size: 30px;
+}
+
+.descripcion{
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 37px;
+    font-size: 16px;
+}
+
+.boton-ver-mas{
+    background-color: var(--main-color);
+    width: 128.78px;
+    height: 48.52px;
+    border: none;
+    display: block;
+    margin: auto;
+    font-size: 15px;
+    color: white;
+}
+
+.add{
+    position: relative;
+    font-size: 62px;
+    color: white;
+}
+
+.add-container{
+    position: fixed;
+    background-color: var(--main-color);
+    height: 82px;
+    width: 82px;
+    border-radius: 50%;
+    bottom: 300px;
+    right: 100px;
+    text-align: center;   
+}
+
+/*SECTION*/
+
+/*FOOTER*/
+
+footer{
+    background-color: var(--main-color);
+    width: 100%;
+    height: 61px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 50px; 
+    text-align: center;
+}
+
+/*FOOTER*/
+
+/*BODY*/

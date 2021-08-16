@@ -1,0 +1,266 @@
+:root{
+    --naranja: #f0a83e;
+    --negro:  #000000;
+    --blanco: #fff;
+    --gris: #ADADAC;
+    --blancofacherito: #f3f3f3;
+
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/** header **/
+header{
+    background-color: var(--naranja);
+    padding: 5px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+ 
+/** header frontCat&Dog **/
+header .header__logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/** header navegacion **/
+header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    font-size: 1.3rem;
+}
+
+header nav ul a{
+    color: var(--blanco);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+header .cat{
+    color: var(--blanco);
+    font-size: 30px;
+
+}
+/** titulo main **/
+.titulo  {
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: column;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--gris);
+    font-size: 2rem;
+}
+
+/** flex productos **/
+main .productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+/** productos **/
+.producto1{
+    background-image: url("../img/churrasquito.png");
+    background-color: var(--blancofacherito);
+    margin: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+    background-position: center center;
+    border-radius: 30px;
+    width: 20rem;
+}
+
+.churrasquito_info{
+    margin-top: 20rem;
+}
+
+.churrasquito_nombre{
+    text-align: center;
+}
+
+.churrasquito_p{
+    color: var(--naranja);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.producto2{
+    background-image: url("../img/comedero.png");
+    background-color: var(--blancofacherito);
+    margin: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+    background-position: center center;
+    border-radius: 30px;
+    width: 20rem;
+}
+
+.comedero_info{
+    margin-top: 20rem;
+    
+}
+
+.comedero_nombre{
+    text-align: center;
+    
+}
+
+.comedero_p{
+    color: var(--naranja);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.producto3{
+    background-image: url("../img/comida.png");
+    background-color: var(--blancofacherito);
+    margin: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+    background-position: center center;
+    border-radius: 30px;
+    width: 20rem;
+}
+
+.comida_info{
+    margin-top: 20rem;
+}
+
+.comida_nombre{
+    text-align: center;
+}
+.comida_p{
+    color: var(--naranja);
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* formulario */
+.formulario{
+    display: flex;
+    background-color: var(--naranja);
+    width: 100%;
+    height: 7rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1.9rem;
+}
+
+.formulario article{
+    font-size: 1.5rem;
+}
+
+.formulario span{
+    color: var(--blanco);
+    font-size: 2rem;
+    padding-right: 4rem;
+}
+
+.formulario .correo{
+    width: 25rem;
+    height: 2rem;
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.formulario .boton{
+    height: 2rem;
+    width: 6rem;
+    border-radius: 15px;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+
+
+/** footer **/
+footer {
+    background-color: var(--negro);
+    color: white;
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+/** responsive a celuco **/
+ @media screen and (max-width: 600px){
+
+    header nav ul, .header__iconos{
+        display: none;
+    }
+
+    header nav::before{
+        content: '\f150';
+        font-size: 2rem;
+        font-family: 'Font Awesome 5 free';
+        color: var(--blanco);
+    }
+    main .titulo{
+        font-size: 2.3rem;
+    }
+    main .productos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center
+    }
+     
+    main section{
+        align-items: center;
+        padding: 0;
+        text-align: center;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 7rem;
+        position: relative;
+        bottom: 0rem;
+    }
+
+    .formulario a{
+        font-size: 1.5rem;
+    }
+
+    footer{
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+    }
+ }
